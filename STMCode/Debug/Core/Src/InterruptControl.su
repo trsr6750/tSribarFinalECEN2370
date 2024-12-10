@@ -1,0 +1,8 @@
+../Core/Src/InterruptControl.c:10:6:IRQ_Enable	24	static
+../Core/Src/InterruptControl.c:19:6:IRQ_Disable	24	static
+../Core/Src/InterruptControl.c:27:6:IRQ_Clear_Pending	24	static
+../Core/Src/InterruptControl.c:35:6:IRQ_Set_Pending	24	static
+../Core/Src/InterruptControl.c:43:6:EXTI_Clear_Pending	16	static
+../Core/Src/InterruptControl.c:46:6:TIMR_Clear_Pending	16	static
+../Core/Src/InterruptControl.c:49:6:TIMR_Mask_IRQ	16	static
+../Core/Src/InterruptControl.c:52:6:TIMR_Unmask_IRQ	16	static

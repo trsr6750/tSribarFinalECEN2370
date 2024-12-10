@@ -1,0 +1,7 @@
+../Core/Src/Timer_Driver.c:13:6:Timer_Config	3
+../Core/Src/Timer_Driver.c:35:6:Timer_Pause	7
+../Core/Src/Timer_Driver.c:45:6:Timer_Start	3
+../Core/Src/Timer_Driver.c:55:6:Timer_Reset	3
+../Core/Src/Timer_Driver.c:65:10:Timer_Get_Value	3
+../Core/Src/Timer_Driver.c:74:6:Timer_Change_IT	5
+../Core/Src/Timer_Driver.c:84:6:Timer_Added2RemoveSRcuzItStartsOnHere	1

@@ -1,0 +1,4 @@
+../Core/Src/RNG.c:12:6:RNG_init	8	static
+../Core/Src/RNG.c:20:6:RNG_Error_Handler	4	static
+../Core/Src/RNG.c:23:6:RNG_Check_Hal_Status	8	static
+../Core/Src/RNG.c:28:10:RNG_getRandom	16	static
