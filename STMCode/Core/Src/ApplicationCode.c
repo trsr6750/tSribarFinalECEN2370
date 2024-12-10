@@ -144,7 +144,7 @@ void Pull_Touch_Input(){
 		}
 		Display_Current_Square();
 		TIMR_Unmask_IRQ(INTERRUPT_TIM3);
-		HAL_Delay(50);
+		HAL_Delay(40);
 	}
 }
 bool Check_Alive(){

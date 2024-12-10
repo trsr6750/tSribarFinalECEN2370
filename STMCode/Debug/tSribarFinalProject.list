@@ -41,13 +41,13 @@ Idx Name          Size      VMA       LMA       File off  Algn
                   CONTENTS, READONLY, DEBUGGING, OCTETS
  18 .debug_line   0001b96a  00000000  00000000  0004f6c0  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 19 .debug_str    000e3ec9  00000000  00000000  0006b02a  2**0
+ 19 .debug_str    000e3eec  00000000  00000000  0006b02a  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 20 .comment      00000043  00000000  00000000  0014eef3  2**0
+ 20 .comment      00000043  00000000  00000000  0014ef16  2**0
                   CONTENTS, READONLY
- 21 .debug_frame  00006014  00000000  00000000  0014ef38  2**2
+ 21 .debug_frame  00006014  00000000  00000000  0014ef5c  2**2
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 22 .debug_line_str 00000072  00000000  00000000  00154f4c  2**0
+ 22 .debug_line_str 00000072  00000000  00000000  00154f70  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
 
 Disassembly of section .text:
@@ -863,8 +863,8 @@ void Pull_Touch_Input(){
 		TIMR_Unmask_IRQ(INTERRUPT_TIM3);
  8000818:	4805      	ldr	r0, [pc, #20]	@ (8000830 <Pull_Touch_Input+0x74>)
  800081a:	f000 f97d 	bl	8000b18 <TIMR_Unmask_IRQ>
-		HAL_Delay(50);
- 800081e:	2032      	movs	r0, #50	@ 0x32
+		HAL_Delay(40);
+ 800081e:	2028      	movs	r0, #40	@ 0x28
  8000820:	f004 fbac 	bl	8004f7c <HAL_Delay>
 	}
 }
@@ -3457,10 +3457,10 @@ void Timer_Config(uint8_t timer){
 		__HAL_TIM_SET_AUTORELOAD(&htim3, (uint32_t)(TIM3_AUTORELOAD));
  8001a0e:	4b0e      	ldr	r3, [pc, #56]	@ (8001a48 <Timer_Config+0xac>)
  8001a10:	681b      	ldr	r3, [r3, #0]
- 8001a12:	f247 5230 	movw	r2, #30000	@ 0x7530
+ 8001a12:	f246 2270 	movw	r2, #25200	@ 0x6270
  8001a16:	62da      	str	r2, [r3, #44]	@ 0x2c
  8001a18:	4b0b      	ldr	r3, [pc, #44]	@ (8001a48 <Timer_Config+0xac>)
- 8001a1a:	f247 5230 	movw	r2, #30000	@ 0x7530
+ 8001a1a:	f246 2270 	movw	r2, #25200	@ 0x6270
  8001a1e:	60da      	str	r2, [r3, #12]
 		__HAL_TIM_ENABLE_IT(&htim3, TIM_IT_UPDATE);
  8001a20:	4b09      	ldr	r3, [pc, #36]	@ (8001a48 <Timer_Config+0xac>)

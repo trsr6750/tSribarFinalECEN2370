@@ -16,7 +16,7 @@
 #define TIM2CountsPerSec	2000
 #define TIM2CountsPer100thSec	(TIM2CountsPerSec/100)
 #define TIM2CountsPerMin	(TIM2CountsPerSec*60)
-#define TIM3CountsPerSec 10000
+#define TIM3CountsPerSec (TIMxCountsPerSecond/(TIM3_PRESCALER+1))
 #define OneTick 1
 #define MaxPlaytime 4294967296 //this is in ticks
 
